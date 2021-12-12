@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="201901132김찬"
+    <title>COVID-19 상황판</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+  </head>
+
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .incontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .item {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    #borderbr {
+      border: 2px solid gray;
+      border-radius: 30px;
+    }
+    .nomargin {
+      margin: 0 0;
+    }
+  </style>
+  <style>
+    @keyframes textColorAnimation {
+      0% {color:red;}
+      100% {color:black;}
+    }
+    span {
+      animation-name: textColorAnimation;
+      animation-duration :3s;
+      animation-iteration-count: infinite;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 0 4px;
+    }
+  </style>
+
+  <body>
+    <header class="incontainer">
+        <h1 align="center">실시간 코로나19 상황 보드</h1>
+    </header>
+    <nav>
+      <a class="menu" href="index.html">확진자 상황 보드</a>
+      <a class="menu" href="level.html">거리 두기 단계</a>
+      <a class="menu" href="nation.html">국가별 확진자 수</a>
+      <a class="menu" href="limit.html">외교부 입국 제한조치</a>
+      <a class="menu" href="behave.html">행동 요령</a>
+    </nav>
+
+    <section id="wrapper">
+      <article>
+        <a href="https://imnews.imbc.com/replay/2021/nwdesk/article/6323268_34936.html">'위중증' 또 최다‥내일부터 방역패스 과태료</a><br>
+        <a href="https://www.ajunews.com/view/20211212193217606">오후 6시까지 코로나19 신규 확진자 총 3130명...전날 대비 358명 ↓</a>
+      </article>
+      <main>
+        <div id="borderbr">
+          <h2 style="text-align: center;">국내 현황</h2>
+          <div class="container">
+            <div class="incontainer">
+              <div class="item" style="margin-bottom: 14px;">
+                <p>510,583</p>
+                <b>총 확진자</b>
+              </div>
+              <div class="item" style="margin-bottom: 14px;" >
+                <p>6,977</p>
+                <b>금일 확진자</b>
+              </div>
+              <div class="item">
+                <p class="nomargin">4,210</p>
+                <p class="nomargin">(+80)</p>
+                <b class="nomargin">사망자</b>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <img src="graph.png" width="90%" height="auto">
+      </main>
+      <aside class="sticky">
+        <p><span>live</span><hr>소식 1</p>
+        <br><p>소식 2</p>
+        <br><p>소식 3</p>
+        <br><p>소식 4</p>
+      </aside>
+      <footer>
+        <p>그래프 출처: 네이버 그래프, 국내 현황: 질병 관리청 보도 자료</p>
+        <p>업데이트: 2021.12.12 오전8시30분</p>
+      </footer>
+      
+    </section>
+
+    <footer class="footer">
+      author:김찬<br>
+      201901132@gmail.com
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="201901132김찬"
+    <title>COVID-19 상황판</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+  </head>
+  <style>
+    @keyframes textColorAnimation {
+      0% {color:red;}
+      100% {color:black;}
+    }
+    span {
+      animation-name: textColorAnimation;
+      animation-duration :3s;
+      animation-iteration-count: infinite;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 0 4px;
+    }
+  </style>
+  <style>
+    .center {
+      text-align: center;
+    }
+    .font1 {
+
+    }
+    .font2{
+      color:gray;
+      font-size: 14px;
+    }
+    .list{
+      background: none;
+      list-style: square;
+      padding-left: 0px;
+    }
+  </style>
+  <body>
+    <header>
+      <h1 align="center">실시간 코로나19 상황 보드</h1>
+    </header>
+    <nav>
+      <a class="menu" href="index.html">확진자 상황 보드</a>
+      <a class="menu" href="level.html">거리 두기 단계</a>
+      <a class="menu" href="nation.html">국가별 확진자 수</a>
+      <a class="menu" href="limit.html">외교부 입국 제한조치</a>
+      <a class="menu" href="behave.html">행동 요령</a>
+    </nav>
+    <section id="wrapper">
+      <main>
+        <h1 class="center">단계적 일상회복 1단계 시행중</h1><hr>
+        <div>
+          <p class="font2">12월 6일(월)부터 4주간 시행하며(1.2까지), 
+            단계적 일상회복 1단계 조정 (한달 연장됨)</p>
+          <p>(현행) 접종여부 관계없이 수도권 10인, 비수도권 12인까지 가능 → <b>(변경) 수도권 6인, 비수도권 8인까지 가능</b></p>
+          <p style="color: blue;">&lt;방역패스 의무적용 시설&gt;</p>
+          <ul>
+            <li class="list">(기존) 유흥시설 등(유흥주점, 단란주점, 클럽·나이트, 헌팅포차, 감성주점, 콜라텍· 무도장), 노래(코인)연습장, 실내체육시설, 목욕장업, 경륜·경정·경마·카지노</li>
+            <li class="list"><b>(신규) 식당·카페, 학원 등, 영화관·공연장, 독서실·스터디카페, 멀티방(오락실 제외), PC방, (실내)스포츠경기(관람)장, 박물관·미술관·과학관, 파티룸, 도서관, 마사지·안마소</b></li>
+          </ul>
+          <li><b>(청소년 유행 차단)</b> 청소년 유행 억제를 위해 방역패스의 예외 범위 (현행 18세 이하)를 <b>11세 이하로 조정</b>하여, <b>12～18세도 방역패스 적용</b>
+          <p style="font-size: 14px;">* 12～18세 청소년도 성인과 동일하게 접종완료 또는 PCR(-) 경우에만 참여 가능, 11세 이하는 계속 방역패스 예외 적용</p>
+          <ul>
+            <li><b style="color: blue;">(적용시기)</b> 청소년에게 예방접종을 받을 수 있는 유예기간(약 8주)* 부여 후 <b>2월 1일(화)부터 실시</b>
+              <p style="font-size: 14px;">* (유예기간) 3주 간격 예방접종 및 접종 후 2주 경과 등 기간 고려</p>
+            </li>
+          </ul>
+          </li>
+          <table border="1px" style="border-collapse: collapse;">
+            <caption>개편안</caption>
+            <thead>
+              <tr>
+                <th>구분</th>
+                <th>1차   개편</th>
+                <th>2차   개편</th>
+                <th>3차   개편</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>방향</td>
+                <td>생업시설 운영제한   완화</td>
+                <td>대규모 행사 허용 </td>
+                <td>사적모임 제한   해제</td>
+              </tr>
+              <tr>
+                <td>전환
+                  기준</td>
+                <td colspan="3">1.   예방접종완료율 (1차 70%,   2차 80%) 2. 중환자실‧입원병상 여력 (&gt;40%)
+                  3.   주간   중증환자‧사망자 발생   규모
+                  4.   유행   규모, 재생산지수 등</td>
+              </tr>
+            </tbody>
+            </table>
+          <img src="rule1.png" width="90%" height="auto">
+          <img src="rule2.png" width="90%" height="auto">
+          <img src="rule3.png" width="90%" height="auto">
+        </div>
+      </main>
+      <aside class="sticky">
+        <p><span>live</span><hr>소식 1</p>
+        <br><p>소식 2</p>
+        <br><p>소식 3</p>
+        <br><p>소식 4</p>
+      </aside>
+      <footer>
+        출처
+        <a href="http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=368300">질병관리청</a>
+        <a href="https://news.seoul.go.kr/welfare/archives/537018">서울특별시</a>
+      </footer>
+    </section>
+    <footer class="footer">
+      author:김찬<br>
+      201901132@gmail.com
+    </footer>
+  </body>
+</html>

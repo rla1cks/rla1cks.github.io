@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="201901132김찬"
+    <title>COVID-19 상황판</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+  </head>
+  <style>
+    .center {
+      text-align: center;
+    }
+    .margin {
+      margin-left: 83px;
+    }
+  </style>
+  <style>
+    @keyframes textColorAnimation {
+      0% {color:red;}
+      100% {color:black;}
+    }
+    span {
+      animation-name: textColorAnimation;
+      animation-duration :3s;
+      animation-iteration-count: infinite;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 0 4px;
+    }
+  </style>
+  <body>
+    <header>
+      <h1 align="center">실시간 코로나19 상황 보드</h1>
+    </header>
+    <nav>
+      <a class="menu" href="index.html">확진자 상황 보드</a>
+      <a class="menu" href="level.html">거리 두기 단계</a>
+      <a class="menu" href="nation.html">국가별 확진자 수</a>
+      <a class="menu" href="limit.html">외교부 입국 제한조치</a>
+      <a class="menu" href="behave.html">행동 요령</a>
+    </nav>
+    <section id="wrapper">
+      <main class="center" style="display: block;">
+        <img src="1.jpg" id="image" style="width: 650px; height: 915px;">
+        <div class="center">
+          <button onclick="next(1)"; >Previous</button>
+          <button onclick="previous(-1)"; >Next</button>
+        </div>
+        
+        <script>
+          var num = 1;
+          function next(i) {
+            if (num == 4) {
+              num = 1;
+            } else{
+              num++;
+            }
+            var img = document.getElementById("image");
+            img.setAttribute("src", num + ".jpg");
+          }
+          function previous(i) {
+            if (num == 1) {
+              num = 4;
+            } else{
+              num--;
+            }
+            var img = document.getElementById("image");
+            img.setAttribute("src", num + ".jpg");
+          }
+        </script>
+      </main>
+      <aside class="sticky">
+        <p><span>live</span><hr>소식 1</p>
+        <br><p>소식 2</p>
+        <br><p>소식 3</p>
+        <br><p>소식 4</p>
+      </aside>
+      <footer><a class="margin" href="https://www.kdca.go.kr/index.es?sid=a2">출처: 질병관리청</a></footer>      
+    </section>
+    <footer class="footer">
+      author:김찬<br>
+      201901132@gmail.com
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="201901132김찬"
+    <title>COVID-19 상황판</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+  </head>
+  <style>
+    .center {
+      text-align: center;
+    }
+    .namebor {
+      border: 1px solid gray;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-left: 15px;
+      margin-bottom: 0;
+    }
+    .itembor {
+      border: 1px solid gray;
+      padding-top: 15px;
+      padding-bottom: 20px;
+      margin: 0;
+      margin-left: 15px;
+      margin-bottom: 2px;
+    }
+  </style>
+  <style>
+    h4 {
+      margin-top: 0;
+      margin-bottom: 4px;
+      margin-left: 4px;
+    }
+    main p {
+      margin-top: 0;
+      font-size: 14px;
+      margin-left: 4px;
+    }
+    a {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }   
+  </style>
+  <style>
+    @keyframes textColorAnimation {
+      0% {color:red;}
+      100% {color:black;}
+    }
+    span {
+      animation-name: textColorAnimation;
+      animation-duration :3s;
+      animation-iteration-count: infinite;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 0 4px;
+    }
+  </style>
+  <body>
+    <header>
+      <h1 align="center">실시간 코로나19 상황 보드</h1>
+    </header>
+    <nav>
+      <a class="menu" href="index.html">확진자 상황 보드</a>
+      <a class="menu" href="level.html">거리 두기 단계</a>
+      <a class="menu" href="nation.html">국가별 확진자 수</a>
+      <a class="menu" href="limit.html">외교부 입국 제한조치</a>
+      <a class="menu" href="behave.html">행동 요령</a>
+    </nav>
+    <section id="wrapper">
+      <main>
+        <h1 class="center">입국제한조치 현황</h1><hr>
+        <h3 class="namebor">입국제한 해제</h3>
+        <div class="itembor">
+          <h4>유럽</h4>
+          <p>리히텐슈타인, 벨기에, 스페인, 에스토니아</p>
+          <h4>미주</h4>
+          <p>엘살바도르</p>
+        </div>
+        <h3 class="namebor">백신접종 입국 허용</h3>
+        <div class="itembor">
+          <h4>아시아태평양</h4>
+          <p>바누아투, 싱가포르, 파키스탄, 파푸아뉴기니, 홍콩</p>
+          <h4>미주</h4>
+          <p>가이아나, 그레나다, 미국, 수리남, 우루과이, 칠레, 캐나다, 트리니다드토바고</p>
+          <h4>유럽</h4>
+          <p>아제르바이잔</p>
+          <h4>중동</h4>
+          <p>모로코, 오만, 이란, 쿠웨이트</p>
+        </div>
+        <h3 class="namebor">입국금지</h3>
+        <div class="itembor">
+          <h4>아시아태평양</h4>
+          <p>나우루, 뉴질랜드, 니우에, 대만, 동티모르, 라오스, 마셜제도, 마이크로네시아, 마카오,
+            말레이시아, 미얀마, 베트남, 브루나이, 사모아, 솔로몬제도, 싱가포르, 인도네시아, 일본,
+              쿡제도, 키리바시, 통가, 투발루, 파키스탄, 피지, 필리핀, 호주, 중국</p>
+          <h4>유럽</h4>
+          <p>투르크메니스탄</p>
+          <h4>중동</h4>
+          <p>이스라엘, 팔레스타인</p>
+          <h4>아프리카</h4>
+          <p>보츠와나, 카메룬, 콩고공화국</p>
+        </div>
+        <h3 class="namebor">격리 조치</h3>
+        <div class="itembor">
+          <h4>아시아태평양</h4>
+          <p>부탄, 스리랑카, 캄보디아, 태국</p>
+          <h4>미주</h4>
+          <p>바베이도스, 세인트루시아, 세인트빈센트그레나딘</p>
+          <h4>유럽</h4>
+          <p>몰타</p>
+          <h4>중동</h4>
+          <p>사우디아라비아, 카타르, 튀니지</p>
+          <h4>아프리카</h4>
+          <p>가봉, 마다가스카르, 모리셔스, 베냉, 부룬디</p>
+        </div>
+        <h3 class="namebor">검역강화</h3>
+        <div class="itembor">
+          <h4>아시아태평양</h4>
+          <p>네팔, 몰디브, 몽골, 방글라데시, 아프가니스탄, 인도</p>
+          <h4>미주</h4>
+          <p>과테말라, 니카라과, 도미니카공화국, 멕시코, 바하마, 베네수엘라, 벨리즈, 볼리비아, 
+            브라질, 세인트키츠네비스, 아르헨티나, 아이티, 앤티가바부다, 에콰도르, 
+            온두라스, 자메이카, 코스타리카, 콜롬비아, 쿠바, 파나마, 파라과이, 페루</p>
+          <h4>유럽</h4>
+          <p>그리스, 네덜란드, 노르웨이, 덴마크, 독일, 라트비아, 러시아, 루마니아, 룩셈부르크, 
+            리투아니아, 모나코, 몬테네그로, 몰도바, 벨라루스, 보스니아헤르체고비나, 
+            북마케도니아, 불가리아, 사이프러스, 세르비아, 스웨덴, 스위스, 슬로바키아, 슬로베니아, 
+            아르메니아, 아이슬란드, 아일랜드, 알바니아, 영국, 오스트리아, 우즈베키스탄, 우크라이나, 
+            이탈리아, 조지아, 체코, 카자흐스탄, 크로아티아, 키르키스스탄, 타지키스탄, 터키, 
+            포르투갈, 폴란드, 프랑스, 핀란드, 헝가리</p>
+          <h4>중동</h4>
+          <p>레바논, 리비아, 모리타니아, 바레인, 아랍에미리트, 알제리, 요르단, 이라크, 이집트</p>
+          <h4>아프리카</h4>
+          <p>가나, 감비아, 기니, 기니비사우, 나미비아, 나이지리아, 남수단, 남아공, 니제르, 
+            라이베리아, 르완다, 말라위, 말리, 모잠비크, 민주콩고, 부르키나파소, 상투메프린시페, 
+            세네갈, 세이셸, 수단, 시에라리온, 앙골라, 에리트레아, 에스와티니, 에티오피아, 우간다, 
+            잠비아, 적도기니, 지부티, 짐바브웨, 중앙아프리카공화국, 차드, 카보베르데, 케냐, 
+            코모로, 코트디부아르, 탄자니아, 토고</p>
+        </div>
+      </main>
+      <aside class="sticky">
+        <p><span>live</span><hr>소식 1</p>
+        <br><p>소식 2</p>
+        <br><p>소식 3</p>
+        <br><p>소식 4</p>
+      </aside>
+      <footer style="margin-left: 15px;">
+        <p style="margin-bottom: 0px;">2021.11.29 자료</p>
+        <a href="https://www.0404.go.kr/dev/newest_list.mofa">출처: 외교부 해외안전여행</a>
+      </footer>
+    </section>
+    <footer class="footer">
+      author:김찬<br>
+      201901132@gmail.com
+    </footer>
+  </body>
+</html>

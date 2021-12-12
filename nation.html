@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="201901132김찬"
+    <title>COVID-19 상황판</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+  </head>
+  <style>
+    @keyframes textColorAnimation {
+      0% {color:red;}
+      100% {color:black;}
+    }
+    span {
+      animation-name: textColorAnimation;
+      animation-duration :3s;
+      animation-iteration-count: infinite;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 0 4px;
+    }
+    .align {
+      margin: 10px auto;
+    }
+    td  {
+      text-align: center;
+      padding: 4px 30px;
+    }
+  </style>
+
+  <body>
+    <header>
+      <h1 align="center">실시간 코로나19 상황 보드</h1>
+    </header>
+    <nav>
+      <a class="menu" href="index.html">확진자 상황 보드</a>
+      <a class="menu" href="level.html">거리 두기 단계</a>
+      <a class="menu" href="nation.html">국가별 확진자 수</a>
+      <a class="menu" href="limit.html">외교부 입국 제한조치</a>
+      <a class="menu" href="behave.html">행동 요령</a>
+    </nav>
+    <section id="wrapper">
+      <main>
+        <table class="align" border="1" style="border-collapse: collapse;">
+          <thead>
+            <tr>
+              <th></th>
+              <th>국가</th>
+              <th>확진자</th>
+              <th>사망자</th>
+              <th>완치</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>미국</td>
+              <td>50,705,257<br>(+169,466)</td>
+              <td>817,326<br>(+2,057)</td>
+              <td>39,951,693<br>(+72,245)</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>인도</td>
+              <td>34,682,736<br>(+7,992)</td>
+              <td>475,128<br>(+393)</td>
+              <td>34,114,331<br>(+9,265)</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>브라질</td>
+              <td>22,184,824<br>(+7,765)</td>
+              <td>616,733<br>(+229)</td>
+              <td>21,407,699<br></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>영국</td>
+              <td>10,719,165<br>(+58,184)</td>
+              <td>146,255<br>(+120)</td>
+              <td>9,414,117<br>(+35,952)</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>러시아</td>
+              <td>9,956,679<br></td>
+              <td>287,180<br></td>
+              <td>8,673,518<br></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>터키</td>
+              <td>9,002,968<br>(+18,561)</td>
+              <td>78,778<br>(+176)</td>
+              <td>8,568,914<br>(+25,129)</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>프랑스</td>
+              <td>8,105,785<br></td>
+              <td>120,168<br></td>
+              <td>7,275,054<br>(+22,678)</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>독일</td>
+              <td>6,463,737<br>(+30,922)</td>
+              <td>105,931<br>(+310)</td>
+              <td>5,368,300<br>(+39,000)</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>이란</td>
+              <td>6,150,843<br></td>
+              <td>130,603<br></td>
+              <td>5,957,017<br></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>아르헨티나</td>
+              <td>5,354,440<br>(+3,573)</td>
+              <td>116,748<br>(+29)</td>
+              <td>5,211,264<br>(+1,931)</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>스페인</td>
+              <td>5,290,190<br>(+17,012)</td>
+              <td>88,381<br>(+60)</td>
+              <td>4,943,735<br>(+2,139)</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>이탈리아</td>
+              <td>5,185,270<br>(+20,490)</td>
+              <td>134,669<br>(+118)</td>
+              <td>4,787,453<br>(+11,777)</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>콜롬비아</td>
+              <td>5,089,695<br>(+1,687)</td>
+              <td>129,011<br>(+42)</td>
+              <td>4,930,529<br>(+1,644)</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>인도네시아</td>
+              <td>4,258,752<br></td>
+              <td>143,923<br></td>
+              <td>4,109,675<br></td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>멕시코</td>
+              <td>3,914,706<br>(+2,992)</td>
+              <td>296,385<br>(+199)</td>
+              <td>3,269,036<br>(+2,071)</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>폴란드</td>
+              <td>3,785,036<br></td>
+              <td>87,928<br></td>
+              <td>3,237,017<br></td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>우크라이나</td>
+              <td>3,553,817<br>(+10,133)</td>
+              <td>90,789<br>(+446)</td>
+              <td>3,184,287<br>(+25,861)</td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>남아프리카 공화국</td>
+              <td>3,112,469<br>(+19,017)</td>
+              <td>90,080<br>(+20)</td>
+              <td>2,878,855<br>(+8,526)</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>네덜란드</td>
+              <td>2,846,126<br></td>
+              <td>20,004<br></td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>필리핀</td>
+              <td>2,836,200<br></td>
+              <td>49,961<br></td>
+              <td>2,774,334<br></td>
+            </tr>
+            <tr>
+              <td>21</td>
+              <td>말레이시아</td>
+              <td>2,683,523<br>(+5,058)</td>
+              <td>30,831<br>(+44)</td>
+              <td>2,591,819<br>(+4,997)</td>
+            </tr>
+            <tr>
+              <td>22</td>
+              <td>체코</td>
+              <td>2,325,181<br>(+12,445)</td>
+              <td>34,377<br>(+135)</td>
+              <td>2,008,647<br>(+26,855)</td>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>페루</td>
+              <td>2,251,027<br>(+1,356)</td>
+              <td>201,650<br>(+123)</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td>24</td>
+              <td>태국</td>
+              <td>2,164,859<br>(+4,079)</td>
+              <td>21,149<br>(+39)</td>
+              <td>2,090,253<br>(+7,302)</td>
+            </tr>
+            <tr>
+              <td>25</td>
+              <td>이라크</td>
+              <td>2,087,247<br></td>
+              <td>23,959<br></td>
+              <td>2,054,081<br></td>
+            </tr>
+            <tr>
+              <td>26</td>
+              <td>벨기에</td>
+              <td>1,929,772<br>(+15,245)</td>
+              <td>27,504<br>(+41)</td>
+              <td>1,421,499<br>(+10,085)</td>
+            </tr>
+            <tr>
+              <td>27</td>
+              <td>캐나다</td>
+              <td>1,827,755<br>(+4,745)</td>
+              <td>29,900<br>(+24)</td>
+              <td>1,764,867<br>(+3,028)</td>
+            </tr>
+            <tr>
+              <td>28</td>
+              <td>루마니아</td>
+              <td>1,791,502<br></td>
+              <td>57,531<br></td>
+              <td>1,711,942<br></td>
+            </tr>
+            <tr>
+              <td>29</td>
+              <td>칠레</td>
+              <td>1,779,865<br></td>
+              <td>38,638<br></td>
+              <td>1,676,714<br></td>
+            </tr>
+            <tr>
+              <td>30</td>
+              <td>일본</td>
+              <td>1,728,922<br></td>
+              <td>18,384<br></td>
+              <td>1,709,777<br></td>
+            </tr>
+            <tr>
+              <td>31</td>
+              <td>방글라데시</td>
+              <td>1,578,819<br></td>
+              <td>28,017<br></td>
+              <td>1,543,740<br></td>
+            </tr>
+            <tr>
+              <td>32</td>
+              <td>베트남</td>
+              <td>1,382,272<br></td>
+              <td>27,402<br></td>
+              <td>1,052,341<br></td>
+            </tr>
+            <tr>
+              <td>33</td>
+              <td>이스라엘</td>
+              <td>1,349,385<br>(+251)</td>
+              <td>8,210<br></td>
+              <td>1,335,236<br>(+428)</td>
+            </tr>
+            <tr>
+              <td>34</td>
+              <td>파키스탄</td>
+              <td>1,288,761<br>(+395)</td>
+              <td>28,823<br>(+11)</td>
+              <td>1,250,427<br>(+358)</td>
+            </tr>
+            <tr>
+              <td>35</td>
+              <td>세르비아</td>
+              <td>1,271,794<br>(+1,387)</td>
+              <td>12,113<br>(+38)</td>
+              <td>1,223,753<br>(+2,732)</td>
+            </tr>
+            <tr>
+              <td>36</td>
+              <td>스웨덴</td>
+              <td>1,229,217<br></td>
+              <td>15,158<br></td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td>37</td>
+              <td>오스트리아</td>
+              <td>1,221,095<br></td>
+              <td>13,076<br></td>
+              <td>1,129,438<br></td>
+            </tr>
+            <tr>
+              <td>38</td>
+              <td>포르투갈</td>
+              <td>1,185,036<br>(+3,742)</td>
+              <td>18,626<br>(+16)</td>
+              <td>1,101,911<br>(+4,357)</td>
+            </tr>
+            <tr>
+              <td>39</td>
+              <td>헝가리</td>
+              <td>1,182,922<br></td>
+              <td>36,429<br></td>
+              <td>968,897<br></td>
+            </tr>
+            <tr>
+              <td>40</td>
+              <td>스위스</td>
+              <td>1,106,573<br></td>
+              <td>11,783<br>(+7)</td>
+              <td>887,573<br></td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+
+      <aside class="sticky">
+        <p><span>live</span><hr>소식 1</p>
+        <br><p>소식 2</p>
+        <br><p>소식 3</p>
+        <br><p>소식 4</p>
+      </aside>
+      <footer></footer>
+      
+    </section>
+    <footer class="footer">
+      author:김찬<br>
+      201901132@gmail.com
+    </footer>
+  </body>
+</html>
